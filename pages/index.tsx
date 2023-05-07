@@ -1,9 +1,15 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Navbar from '@/components/Navbar'
+import Header from '@/components/Header'
+import Services from '@/components/Services'
+import Porfolio from '@/components/Porfolio'
+import Team from '@/components/Team'
+import Clients from '@/components/Clients'
+import Contact from '@/components/Contact'
+import Footer from '@/components/Footer'
+import About from '@/components/About'
+import { Button } from 'react-bootstrap'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -14,7 +20,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-  
+
+     
+      <Navbar/>
+      <Header/>    
+      <Services/>
+      <Porfolio />
+      <About/>
+      <Team/>
+      <Clients/>
+      <Contact />
+      <Footer/>
     </>
   )
 }
